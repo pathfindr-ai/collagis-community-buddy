@@ -1,0 +1,184 @@
+{
+  "messages": [
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Hi, I’m the Maintenance Report Assistant. I can help you report a maintenance request. Please note that urgent repairs must be done immediately because they make the property unsafe or difficult to live in. If there is an immediate risk to your health and safety, please contact emergency services on 000. In order to report a maintenance, I need to ask you a few questions. Would you like to proceed in English, Vietnamese, Hindi, or Bahasa?"
+    },
+    {
+      "Author": "User",
+      "Text": "Basa to!"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Baik, kita akan melanjutkan dalam Bahasa. Apa nama depan Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "Nama saya Anwar."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih, Anwar. Apa nama belakang Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "Nama belakang saya Bukit."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih, Anwar Bukit. Apa nomor telepon Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "NOMOR TELEPON SAYA 61112345678"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih. Nomor telepon Anda adalah 61112345678, benar?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yan ito ba nya?"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral Maaf, saya tidak mengerti. Apakah nomor telepon Anda 61112345678 benar?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yan ito ba nga?"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Baik, terima kasih. Apa alamat email Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "E-mail saya anwar.atbukit.com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral Sepertinya ada kesalahan pada alamat email Anda. Bisa tolong klarifikasi alamat email Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "Ito ba na?"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral Mohon maaf, saya masih belum mengerti. Bisa tolong ulangi alamat email Anda dengan jelas?"
+    },
+    {
+      "Author": "User",
+      "Text": "E-mail saya anwar.atbukit.com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral Sepertinya alamat email Anda tidak memiliki '@' atau domain. Bisa tolong klarifikasi alamat email Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "www.anwaratbukit.com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral Sepertinya masih ada kesalahan pada alamat email Anda. Alamat email harus memiliki '@' dan domain seperti '.com'. Bisa tolong ulangi alamat email Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "www.anwaratbukit.com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral Sepertinya masih ada kesalahan pada alamat email Anda. Alamat email harus memiliki '@' dan domain seperti '.com'. Bisa tolong ulangi alamat email Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "www.anwaratbukit.com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral Sepertinya kita mengalami kesulitan dengan alamat email. Mari kita lanjutkan ke pertanyaan berikutnya. Apa alamat properti yang membutuhkan perbaikan?"
+    },
+    {
+      "Author": "User",
+      "Text": "Anwar at Bekitt.com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih. Alamat email Anda adalah anwar@bekitt.com, benar?"
+    },
+    {
+      "Author": "User",
+      "Text": "Ito ba na?"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Baik, terima kasih. Apa alamat properti yang membutuhkan perbaikan?"
+    },
+    {
+      "Author": "User",
+      "Text": "Alamat saya adalah 123 Abey Road, Brisbane, Queensland."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih. Alamat properti Anda adalah 123 Abey Road, Brisbane, Queensland, benar?"
+    },
+    {
+      "Author": "User",
+      "Text": "Di ruma ko. Ito ba na?"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Baik, terima kasih. Di mana perbaikan diperlukan? Di rumah Anda atau area umum?"
+    },
+    {
+      "Author": "User",
+      "Text": "DILUWAN RUMAKU!"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral Baik, apakah masalah ini berada di luar rumah Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "Pintu geser saya."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Baik, jadi masalahnya ada di pintu geser di luar rumah Anda, benar?"
+    },
+    {
+      "Author": "User",
+      "Text": "Saya tidak bisa masuk atau keluar pintu."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih atas informasinya. Apakah masalah ini terkait dengan akses, kebersihan, listrik, gas, air, atau sesuatu yang lain?"
+    },
+    {
+      "Author": "User",
+      "Text": "Menurutku kaitnya rusak."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih. Apakah Anda sudah melaporkan masalah ini dalam 6 bulan terakhir?"
+    },
+    {
+      "Author": "User",
+      "Text": "Ya, aku pernah melakukan itu sebelumnya."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih atas informasinya. Apakah ada detail tambahan yang bisa membantu kami menyelesaikan masalah ini lebih cepat?"
+    },
+    {
+      "Author": "User",
+      "Text": "Saya bisa meluangkan waktu untuk membahas masalah ini lebih laju. Beritahu saya saja."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih, Anwar. Kami akan segera menghubungi Anda untuk menyelesaikan masalah ini. Terima kasih telah melaporkan perbaikan ini."
+    }
+  ]
+}

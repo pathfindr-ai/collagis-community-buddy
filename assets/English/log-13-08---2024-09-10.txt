@@ -1,0 +1,136 @@
+{
+  "messages": [
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Hi, I’m the Maintenance Report Assistant. I can help you report a maintenance request. Please note that urgent repairs must be done immediately because they make the property unsafe or difficult to live in. If there is an immediate risk to your health and safety, please contact emergency services on 000. In order to report a maintenance, I need to ask you a few questions. Would you like to proceed in English, Vietnamese, Hindi, or Bahasa?"
+    },
+    {
+      "Author": "User",
+      "Text": "I'd like to continue in English."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Great! Let's get started. What is your first name?"
+    },
+    {
+      "Author": "User",
+      "Text": "My first name is Tina."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you, Tina. What is your last name?"
+    },
+    {
+      "Author": "User",
+      "Text": "My last name is Turner."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you, Tina Turner. What is your phone number?"
+    },
+    {
+      "Author": "User",
+      "Text": "My phone number is 612-123-45678."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Just to confirm, your phone number is 612-123-45678. Is that correct?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yes, that's correct."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Perfect. What is your email address?"
+    },
+    {
+      "Author": "User",
+      "Text": "Tina at Turner dot com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Just to confirm, your email address is Tina@Turner.com. Is that correct?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yes, that's correct."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Great. What is the address of the property in need of maintenance?"
+    },
+    {
+      "Author": "User",
+      "Text": "The address is 123 Abbey Road, Melbourne, Victoria."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Just to confirm, the address is 123 Abbey Road, Melbourne, Victoria. Is that correct?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yes. That is correct."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you, Tina. Where is the repair needed? At your home or a common area?"
+    },
+    {
+      "Author": "User",
+      "Text": "home at home"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Understood. Is the issue inside or outside your home?"
+    },
+    {
+      "Author": "User",
+      "Text": "inside"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Which room is the issue in? For example, bathroom, bedroom, kitchen, etc."
+    },
+    {
+      "Author": "User",
+      "Text": "The kitchen."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. What does this issue relate to? For example, access, cleaning, electrical, gas, water, or something else."
+    },
+    {
+      "Author": "User",
+      "Text": "It relates to gas."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Please describe the issue."
+    },
+    {
+      "Author": "User",
+      "Text": "My stove burner will not turn off."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you for the information. Have you raised this issue in the last 6 months?"
+    },
+    {
+      "Author": "User",
+      "Text": "No, I have not."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Please share any additional details that can help us resolve the issue faster."
+    },
+    {
+      "Author": "User",
+      "Text": "I'm pretty concerned about this issue, as I have young children that live with me."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant I understand your concern, Tina. We will prioritize this issue. Thank you for providing all the necessary details. We will get back to you as soon as possible."
+    }
+  ]
+}

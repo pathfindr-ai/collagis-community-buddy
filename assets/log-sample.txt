@@ -1,0 +1,139 @@
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Alright, we will continue in Hindi. Please tell me your first name."
+},
+{
+  "Author": "User",
+  "Text": "John"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Thank you, John. Please tell me your last name."
+},
+{
+  "Author": "User",
+  "Text": "Doe."
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Thank you, John Dow. Please provide your phone number."
+},
+{
+  "Author": "User",
+  "Text": "0-5-1-2 2-9-6 1-8-4"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Thank you. Please confirm if your phone number is 0512-296-184?"
+},
+{
+  "Author": "User",
+  "Text": "Yes."
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Please provide your email address."
+},
+{
+  "Author": "User",
+  "Text": "johndoe1@gmail.com"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Thank you. Please confirm if your email address is johndoe1@gmail.com?"
+},
+{
+  "Author": "User",
+  "Text": "Yes"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Please provide the address of the property that needs repair."
+},
+{
+  "Author": "User",
+  "Text": "87 McPherson Road,YALLAMBIE, Victoria, 3690"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Thank you. Please confirm if the property address is 87 McPherson Road,YALLAMBIE, Victoria, 3690?"
+},
+{
+  "Author": "User",
+  "Text": "Yes"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Where is the repair needed? Inside your home or in a common area?"
+},
+{
+  "Author": "User",
+  "Text": "Home"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Is the issue inside or outside?"
+},
+{
+  "Author": "User",
+  "Text": "Outside"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Please confirm if the issue is Outside the house?"
+},
+{
+  "Author": "User",
+  "Text": "Yes"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Please tell me which area the issue is in?"
+},
+{
+  "Author": "User",
+  "Text": "Carport"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Is the issue in the Carport?"
+},
+{
+  "Author": "User",
+  "Text": "Yes."
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant What is this issue related to? Water, gas, electrical, sanitation, or something else?"
+},
+{
+  "Author": "User",
+  "Text": "Electrical"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Could you briefly describe the electrical issue you're having?"
+},
+{
+  "Author": "User",
+  "Text": "The lights in the carport keep flickering, and sometimes when I turn on the switch, there is a small spark."
+},{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Has this issue been raised in the last six months?"
+},
+{
+  "Author": "User",
+  "Text": "Yes"
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Thank you for providing the details. We will prioritize the issue as it involves electrical safety. Is there anything else you'd like to mention?"
+},
+{
+  "Author": "User",
+  "Text": "No, that's all."
+},
+{
+  "Author": "ChatGPT",
+  "Text": "#pleasant Thank you. If you need more help, please feel free to contact us."
+}

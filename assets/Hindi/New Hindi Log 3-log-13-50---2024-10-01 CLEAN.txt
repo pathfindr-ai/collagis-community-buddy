@@ -1,0 +1,136 @@
+{
+  "messages": [
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Hi, I’m the Maintenance Report Assistant. I can help you report a maintenance request. In order to report a maintenance issue, I need to ask you a few questions. Would you like to proceed in English, Vietnamese, Hindi, or Bahasa?"
+    },
+    {
+      "Author": "User",
+      "Text": "हिंदी बोलते रहो"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant कृपया ध्यान दें कि तत्काल मरम्मत तुरंत की जानी चाहिए क्योंकि वे संपत्ति को असुरक्षित या रहने के लिए कठिन बना देती हैं। यदि आपके स्वास्थ्य और सुरक्षा के लिए तत्काल जोखिम है, तो कृपया आपातकालीन सेवाओं से संपर्क करें। आपका पहला नाम क्या है?"
+    },
+    {
+      "Author": "User",
+      "Text": "मेरा पहला नाम दिनेश हैے"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral आपका अंतिम नाम क्या है?"
+    },
+    {
+      "Author": "User",
+      "Text": "मेरा उपनाम जैन है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral आपका फोन नंबर क्या है?"
+    },
+    {
+      "Author": "User",
+      "Text": "मेरा फ़ोन नंबर 61-3-1234-5678 है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral आपका फोन नंबर 61312345678 है, क्या यह सही है?"
+    },
+    {
+      "Author": "User",
+      "Text": "हाँ यह सही है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral आपका ईमेल क्या है?"
+    },
+    {
+      "Author": "User",
+      "Text": "DineshJain at gmail.com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral आपका ईमेल DineshJain@gmail.com है, क्या यह सही है?"
+    },
+    {
+      "Author": "User",
+      "Text": "हाँ यह सही है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral मरम्मत की आवश्यकता वाले संपत्ति का पता क्या है?"
+    },
+    {
+      "Author": "User",
+      "Text": "ज़रूर, पता है 123 एबी रोड, सिडनी, न्यू साउथ वेल्स"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral संपत्ति का पता 123 AB Road, Sydney, New South Wales है, क्या यह सही है?"
+    },
+    {
+      "Author": "User",
+      "Text": "हाँ यह सही है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral मरम्मत की आवश्यकता कहाँ है? आपके घर पर या किसी सामान्य क्षेत्र में?"
+    },
+    {
+      "Author": "User",
+      "Text": "एक सामान्यक शेत्र में"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral क्या यह समस्या अंदर है या बाहर?"
+    },
+    {
+      "Author": "User",
+      "Text": "मुद्दा बाहर का है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral कृपया बताएं कि समस्या किस क्षेत्र में है? बालकनी, कार पार्क, कारपोर्ट, दरवाजा, बाड़, फर्श, गेराज, गार्डन शेड, बगीचे, पत्र बॉक्स, चल इकाई, अन्य, खेल का मैदान, छत, सीढ़ी, कदम, बरामदा, यार्ड?"
+    },
+    {
+      "Author": "User",
+      "Text": "कार पार्क में"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral क्या यह समस्या पहुंच, सफाई, बिजली, गैस, पानी, या कुछ और से संबंधित है?"
+    },
+    {
+      "Author": "User",
+      "Text": "कार पार्क तक पहुँच प्राप्त करना"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral कृपया समस्या का वर्णन करें।"
+    },
+    {
+      "Author": "User",
+      "Text": "गेट खुला रहता है और ठीक से बंद नहीं होता।"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral क्या आपने पिछले 6 महीनों में इस समस्या को उठाया है?"
+    },
+    {
+      "Author": "User",
+      "Text": "हाँ, मैंने इसकी सूच्णा दी है।"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral कृपया कोई अतिरिक्त विवरण साझा करें जो हमें समस्या को तेजी से हल करने में मदद कर सकता है।"
+    },
+    {
+      "Author": "User",
+      "Text": "ये कुछ ऐसा है जिससे मुझे यहां रहने में शर्मिनदगी होती है।"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant धन्यवाद, आपकी जानकारी दर्ज कर ली गई है। हम जल्द से जल्द इस समस्या को हल करने की कोशिश करेंगे।"
+    }
+  ]
+}

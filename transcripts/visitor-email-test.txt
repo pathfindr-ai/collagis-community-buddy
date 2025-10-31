@@ -1,0 +1,48 @@
+{
+  "messages": [
+    {
+      "Author": "ChatGPT",
+      "Text": "#concierge Welcome to Collagis reception. Are you checking in a visitor?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yes, please. My full name is Daniel Reeves and I'm from Aurora Analytics."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#concierge Great, Daniel. Who are you here to see?"
+    },
+    {
+      "Author": "User",
+      "Text": "I'm meeting with Sarah Lee from Strategy."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#concierge What's the purpose of your visit?"
+    },
+    {
+      "Author": "User",
+      "Text": "Quarterly roadmap review."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#concierge Noted. What time should I record for your arrival?"
+    },
+    {
+      "Author": "User",
+      "Text": "I arrived at 9:05 AM on 27 October 2025."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#concierge Any notes we should pass to Sarah?"
+    },
+    {
+      "Author": "User",
+      "Text": "Let him know I've brought the revised presentation deck on a USB."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#concierge Thanks Daniel Reeves from Aurora Analytics. I'll email Sarah Lee that you're here for the roadmap review."
+    }
+  ]
+}

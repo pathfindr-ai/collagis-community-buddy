@@ -1,0 +1,152 @@
+{
+  "messages": [
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Hi, I’m the Maintenance Report Assistant. I can help you report a maintenance request. Please note that urgent repairs must be done immediately because they make the property unsafe or difficult to live in. If there is an immediate risk to your health and safety, please contact emergency services on 000. In order to report a maintenance, I need to ask you a few questions. Would you like to proceed in English, Vietnamese, Hindi, or Bahasa?"
+    },
+    {
+      "Author": "User",
+      "Text": "Saya ingin melanjutkan dalam bahasa"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Baiklah, mari kita mulai. Apa nama depan Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "Nama depan saya adalah Harta."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih, Harta. Apa nama belakang Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "Nama keluarga saya adalah Manaru."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih, Harta Manaru. Apa nomor telepon Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "NOMOR TELEPON SAYA 612-12345678"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih. Nomor telepon Anda adalah 612-12345678, benar?"
+    },
+    {
+      "Author": "User",
+      "Text": "Iya, ito ba niya?"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih. Apa alamat email Anda?"
+    },
+    {
+      "Author": "User",
+      "Text": "Alamat email saya adalah harta.manaloo.com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral Sepertinya ada kesalahan pada alamat email Anda. Bisakah Anda mengonfirmasi alamat email Anda dengan menyertakan '@' dan domain?"
+    },
+    {
+      "Author": "User",
+      "Text": "harta.manalo.com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih. Alamat email Anda adalah harta.manalo.com, benar?"
+    },
+    {
+      "Author": "User",
+      "Text": "Ya, itu banyak."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih. Apa alamat properti yang membutuhkan perbaikan?"
+    },
+    {
+      "Author": "User",
+      "Text": "Alamatnya adalah 123 Abeyro, Melbourne, Victoria."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih. Alamat properti yang membutuhkan perbaikan adalah 123 Abeyro, Melbourne, Victoria, benar?"
+    },
+    {
+      "Author": "User",
+      "Text": "😗 😒 Yeah Ito ba nya...."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#neutral Baiklah, di mana perbaikan diperlukan? Di rumah Anda atau area umum?"
+    },
+    {
+      "Author": "User",
+      "Text": "Masalahnya ada di area umum."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Apakah masalahnya di dalam atau di luar area umum?"
+    },
+    {
+      "Author": "User",
+      "Text": "Itu Anda di dalam."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Jika Anda tinggal di properti bertingkat tinggi atau berjalan kaki, di lantai berapa masalahnya?"
+    },
+    {
+      "Author": "User",
+      "Text": "Di lantai sepuluh."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Di ruangan mana masalahnya? Apakah itu di ruang komunitas, pintu, hidran kebakaran, lantai, foyer, lorong, laundry, kotak surat, lift, ruang surat, lokasi ganda, atap, tangga, atau di seluruh area?"
+    },
+    {
+      "Author": "User",
+      "Text": "Liftnya tidak berfungsi."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Masalah ini terkait dengan akses, kebersihan, listrik, gas, air, atau sesuatu yang lain?"
+    },
+    {
+      "Author": "User",
+      "Text": "Pintunya tidak terbuka, jadi saya tidak bisa masuk."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Tolong jelaskan masalahnya lebih lanjut."
+    },
+    {
+      "Author": "User",
+      "Text": "Pintu lift tidak berfungsi dan tidak dapat digunakan."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Apakah Anda telah melaporkan masalah ini dalam 6 bulan terakhir?"
+    },
+    {
+      "Author": "User",
+      "Text": "Tidak. Ang kogalo."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Tolong bantu kami menemukan area umum ini. Apa nama gedung dan lantainya, jika relevan, untuk membantu kami menemukan masalah lebih cepat?"
+    },
+    {
+      "Author": "User",
+      "Text": "Cukup khawatir dengan masalah ini karena saya memiliki anak kecil yang tinggal bersama saya."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Terima kasih atas informasinya. Kami akan segera menindaklanjuti masalah ini. Apakah ada detail tambahan yang dapat membantu kami menyelesaikan masalah ini lebih cepat?"
+    }
+  ]
+}

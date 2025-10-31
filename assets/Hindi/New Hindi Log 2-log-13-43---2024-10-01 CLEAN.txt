@@ -1,0 +1,152 @@
+{
+  "messages": [
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Hi, I’m the Maintenance Report Assistant. I can help you report a maintenance request. In order to report a maintenance issue, I need to ask you a few questions. Would you like to proceed in English, Vietnamese, Hindi, or Bahasa?"
+    },
+    {
+      "Author": "User",
+      "Text": "मैं हिंदी में बोलना जारी रखना चाहता हूं"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant कृपया ध्यान दें कि तत्काल मरम्मत तुरंत की जानी चाहिए क्योंकि वे संपत्ति को असुरक्षित या रहने के लिए कठिन बनाते हैं। यदि आपके स्वास्थ्य और सुरक्षा के लिए तत्काल जोखिम है, तो कृपया आपातकालीन सेवाओं से संपर्क करें। आपका पहला नाम क्या है?"
+    },
+    {
+      "Author": "User",
+      "Text": "मेरा पहला नाम गौरी है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant आपका अंतिम नाम क्या है?"
+    },
+    {
+      "Author": "User",
+      "Text": "मेरा उपनाम गुप्ता है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant आपका फोन नंबर क्या है?"
+    },
+    {
+      "Author": "User",
+      "Text": "मेरा फोन नमब छए एक, दो, एक, दो, तीन, चार, पांच, छए, साथ, आथ है।"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant आपका फोन नंबर एक, दो, एक, दो, तीन, चार, पांच, छः, सात, आठ है, सही है?"
+    },
+    {
+      "Author": "User",
+      "Text": "हाँ यह सही है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant आपका ईमेल क्या है?"
+    },
+    {
+      "Author": "User",
+      "Text": "Gauri Gupta at gmail.com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant आपका ईमेल gaurigupta@gmail.com है, सही है?"
+    },
+    {
+      "Author": "User",
+      "Text": "हाँ यह सही है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant जिस संपत्ति में मरम्मत की आवश्यकता है, उसका पता क्या है?"
+    },
+    {
+      "Author": "User",
+      "Text": "मेरा पता है 123 एबी रोड, मेलबर्न, विक्टोरिया"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant आपका पता 123 एबी रोड, मेलबर्न, विक्टोरिया है, सही है?"
+    },
+    {
+      "Author": "User",
+      "Text": "हाँ यह सही है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant मरम्मत की आवश्यकता कहाँ है? आपके घर में या एक सामान्य क्षेत्र में?"
+    },
+    {
+      "Author": "User",
+      "Text": "समस्या साज़ाक शीत्र में है।"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant क्या यह समस्या अंदर है या बाहर?"
+    },
+    {
+      "Author": "User",
+      "Text": "आजहक शेत्र के अंदर का है।"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant यदि आप एक उच्च-उठाव / वॉक अप संपत्ति में रहते हैं, तो समस्या किस मंजिल पर है?"
+    },
+    {
+      "Author": "User",
+      "Text": "समस्या पहली मंजिल पर है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant समस्या किस कमरे में है?"
+    },
+    {
+      "Author": "User",
+      "Text": "सामने का दरवाजा"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant क्या यह समस्या दरवाजे से संबंधित है, सही है?"
+    },
+    {
+      "Author": "User",
+      "Text": "हाँ यह सही है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant यह समस्या किससे संबंधित है? पहुँच, सफाई, बिजली, गैस, पानी, या कुछ और?"
+    },
+    {
+      "Author": "User",
+      "Text": "वहाँ पानी का एक बड़ा गड्ढा है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant कृपया समस्या का वर्णन करें।"
+    },
+    {
+      "Author": "User",
+      "Text": "दरवाजे के ऊपर कहीं से एक बड़ा रिसाव आ रहा है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant क्या आपने पिछले 6 महीनों में इस समस्या को उठाया है?"
+    },
+    {
+      "Author": "User",
+      "Text": "यह एक और बात है"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant कृपया कोई अतिरिक्त विवरण साझा करें जो हमें समस्या को तेजी से हल करने में मदद कर सकता है।"
+    },
+    {
+      "Author": "User",
+      "Text": "मैं इस मुद्दे को लेकर काफ़ी चिंतित हूँ क्योंकि मेरे साथ छोटे बच्चे रहते हैं।"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant हम आपकी चिंता को समझते हैं और इसे जल्द से जल्द हल करने की कोशिश करेंगे। धन्यवाद, ग़ौरी गुप्ता जी।"
+    }
+  ]
+}
