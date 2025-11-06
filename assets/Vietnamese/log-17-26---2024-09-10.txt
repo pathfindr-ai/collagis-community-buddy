@@ -1,0 +1,152 @@
+{
+  "messages": [
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Hi, I’m the Maintenance Report Assistant. I can help you report a maintenance request. In order to report a maintenance issue, I need to ask you a few questions. Would you like to proceed in English, Vietnamese, Hindi, or Bahasa?"
+    },
+    {
+      "Author": "User",
+      "Text": "Tôi muốn tiếp tục bằng tiếng Việt."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Xin lưu ý rằng các sửa chữa khẩn cấp phải được thực hiện ngay lập tức vì chúng làm cho tài sản không an toàn hoặc khó sống. Nếu có nguy cơ ngay lập tức đối với sức khỏe và an toàn của bạn, vui lòng liên hệ với dịch vụ khẩn cấp theo số không, không, không. Tên của bạn là gì?"
+    },
+    {
+      "Author": "User",
+      "Text": "Tên tôi là Thi."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Họ của bạn là gì?"
+    },
+    {
+      "Author": "User",
+      "Text": "Hậu của tôi là Phạm."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Số điện thoại của bạn là gì?"
+    },
+    {
+      "Author": "User",
+      "Text": "số điện thoại của tôi là 6 1 2 1 2 3 4 5 6 7 8"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Số điện thoại của bạn là sáu, một, hai, một, hai, ba, bốn, năm, sáu, bảy, tám, đúng không?"
+    },
+    {
+      "Author": "User",
+      "Text": "Vâng, đúng vậy!"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Email của bạn là gì?"
+    },
+    {
+      "Author": "User",
+      "Text": "thi pham at gmail dot com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Email của bạn là thipham@gmail.com, đúng không?"
+    },
+    {
+      "Author": "User",
+      "Text": "Vâng, đúng vậy."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Địa chỉ của tài sản cần bảo trì là gì?"
+    },
+    {
+      "Author": "User",
+      "Text": "Địa chỉ là 123 Abbey Road, Melbourne, Victoria."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Địa chỉ của bạn là một, hai, ba Abbey Road, Melbourne, Victoria, đúng không?"
+    },
+    {
+      "Author": "User",
+      "Text": "Vâng, đúng vậy."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Sửa chữa cần thiết ở đâu? Tại nhà của bạn hay khu vực chung?"
+    },
+    {
+      "Author": "User",
+      "Text": "Ở nhà của tôi."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Vấn đề nằm bên trong hay bên ngoài?"
+    },
+    {
+      "Author": "User",
+      "Text": "Bên trong ngôi nhà của tôi"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Vấn đề nằm ở phòng nào?"
+    },
+    {
+      "Author": "User",
+      "Text": "Có vấn đề ở cầu thang."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Vấn đề này thuộc về cầu thang, đúng không?"
+    },
+    {
+      "Author": "User",
+      "Text": "Vâng, đúng vậy."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Vấn đề này liên quan đến gì? Truy cập, vệ sinh, điện, gas, nước, hay cái gì khác?"
+    },
+    {
+      "Author": "User",
+      "Text": "Có gì đó không ổn với đèn và điện."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Vui lòng mô tả vấn đề"
+    },
+    {
+      "Author": "User",
+      "Text": "Đèn trần không hoạt động."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Bạn đã báo cáo vấn đề này trong 6 tháng qua chưa?"
+    },
+    {
+      "Author": "User",
+      "Text": "Không, tôi chưa."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Vui lòng chia sẻ thêm chi tiết để chúng tôi có thể giải quyết vấn đề nhanh hơn."
+    },
+    {
+      "Author": "User",
+      "Text": "Tôi khá lo lắng về vấn đề này vì tôi có con nhỏ sống cùng."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Cảm ơn bạn đã chia sẻ. Chúng tôi sẽ cố gắng giải quyết vấn đề này nhanh nhất có thể. Bạn có thêm chi tiết nào khác không?"
+    },
+    {
+      "Author": "User",
+      "Text": "Không, tôi chưa."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Cảm ơn bạn đã cung cấp thông tin. Chúng tôi sẽ liên hệ với bạn sớm để giải quyết vấn đề này."
+    }
+  ]
+}

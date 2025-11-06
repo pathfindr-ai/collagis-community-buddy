@@ -1,0 +1,136 @@
+{
+  "messages": [
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Hi, I’m the Maintenance Report Assistant. I can help you report a maintenance request. Please note that urgent repairs must be done immediately because they make the property unsafe or difficult to live in. If there is an immediate risk to your health and safety, please contact emergency services on 000. In order to report a maintenance, I need to ask you a few questions. Would you like to proceed in English, Vietnamese, Hindi, or Bahasa?"
+    },
+    {
+      "Author": "User",
+      "Text": "English"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Great, let's proceed in English. What is your first name?"
+    },
+    {
+      "Author": "User",
+      "Text": "My name is Matt."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you, Matt. What is your last name?"
+    },
+    {
+      "Author": "User",
+      "Text": "It's Matthews."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you, Matt Matthews. What is your phone number?"
+    },
+    {
+      "Author": "User",
+      "Text": "My phone number is 61 2 1 2 3 4 5 6 7 8"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Just to confirm, your phone number is 61 2 1 2 3 4 5 6 7 8. Is that correct?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yes, that's correct."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Great, thank you. What is your email?"
+    },
+    {
+      "Author": "User",
+      "Text": "My email is matt at matthews dot com."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Just to confirm, your email is matt@matthews.com. Is that correct?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yep, that's correct."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Perfect. What is the address of the property in need of maintenance?"
+    },
+    {
+      "Author": "User",
+      "Text": "The address is 123 Abbey Road, Sydney, New South Wales."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Just to confirm, the address is 123 Abbey Road, Sydney, New South Wales. Is that correct?"
+    },
+    {
+      "Author": "User",
+      "Text": "yes"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Where is the repair needed? At your home or a common area?"
+    },
+    {
+      "Author": "User",
+      "Text": "A common area."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Is the issue inside or outside the common area?"
+    },
+    {
+      "Author": "User",
+      "Text": "It is OUTSIDE."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Which area is the issue in? For example, balcony, car park, carport, door, fence, floor, garage, garden shed, gardens, letter box, movable unit, multiple location, other, playground, roof, sleepout, stairway, steps, verandah, yard."
+    },
+    {
+      "Author": "User",
+      "Text": "In the garage."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. What does this issue relate to? For example, access, cleaning, electrical, gas, water, or something else."
+    },
+    {
+      "Author": "User",
+      "Text": "Needs some cleaning."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Please describe the issue in detail."
+    },
+    {
+      "Author": "User",
+      "Text": "There is graffiti that needs to be removed."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you for the details. Have you raised this issue in the last 6 months?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yes, I have."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you for letting us know. Please share any additional details that can help us resolve the issue faster."
+    },
+    {
+      "Author": "User",
+      "Text": "This is something that makes me embarrassed to live here."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant I understand, and I'm sorry to hear that. We'll do our best to address this issue promptly. Thank you for providing all the necessary details, Matt. We will process your request as soon as possible."
+    }
+  ]
+}

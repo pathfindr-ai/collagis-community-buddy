@@ -1,0 +1,145 @@
+{
+  "messages": [
+
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Hi, I’m the Maintenance Report Assistant. I can help you report a maintenance request. Please note that urgent repairs must be done immediately because they make the property unsafe or difficult to live in. If there is an immediate risk to your health and safety, please contact emergency services on 000. In order to report a maintenance, I need to ask you a few questions. Would you like to proceed in English, Vietnamese, Hindi, or Bahasa?"
+    },
+    {
+      "Author": "User",
+      "Text": "English, please!"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Great! Let's get started. What is your first name?"
+    },
+    {
+      "Author": "User",
+      "Text": "John My name is John"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you, John. What is your last name?"
+    },
+    {
+      "Author": "User",
+      "Text": "Johnson"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you, John Johnson. What is your phone number?"
+    },
+    {
+      "Author": "User",
+      "Text": "611-1234-5678"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Just to confirm, your phone number is 611-1234-5678. Is that correct?"
+    },
+    {
+      "Author": "User",
+      "Text": "yes yes"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. What is your email?"
+    },
+    {
+      "Author": "User",
+      "Text": "john at johnson dot com"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Just to confirm, your email is john@johnson.com. Is that correct?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yes. That is correct."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. What is the address of the property in need of maintenance?"
+    },
+    {
+      "Author": "User",
+      "Text": "The address is 123 Abbey Road, Brisbane, Queensland."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Just to confirm, the address is 123 Abbey Road, Brisbane, Queensland. Is that correct?"
+    },
+    {
+      "Author": "User",
+      "Text": "Yes, that's correct. Yes."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Where is the repair needed? At your home or a common area?"
+    },
+    {
+      "Author": "User",
+      "Text": "in my home."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Is the issue inside or outside?"
+    },
+    {
+      "Author": "User",
+      "Text": "inside"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Which room is the issue in? For example, bathroom, bedroom, kitchen, etc."
+    },
+    {
+      "Author": "User",
+      "Text": "bathroom in the bathroom"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you. Just to confirm, the issue is in the bathroom. Is that correct?"
+    },
+    {
+      "Author": "User",
+      "Text": "That's correct. Yes."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant What does this issue relate to? For example, access, cleaning, electrical, gas, water, or something else."
+    },
+    {
+      "Author": "User",
+      "Text": "Electrical."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Please describe the issue."
+    },
+    {
+      "Author": "User",
+      "Text": "The fan is not working."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Have you raised this issue in the last 6 months?"
+    },
+    {
+      "Author": "User",
+      "Text": "No!"
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Please share any additional details that can help us resolve the issue faster."
+    },
+    {
+      "Author": "User",
+      "Text": "I can make myself available to discuss the issue more, just let me know."
+    },
+    {
+      "Author": "ChatGPT",
+      "Text": "#pleasant Thank you for the information, John. We will process your maintenance request and get back to you soon. Have a great day!"
+    }
+  ]
+}

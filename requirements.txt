@@ -1,0 +1,9 @@
+selenium==4.35.0
+pyinstaller
+pydantic
+openai==2.0.1
+python-dotenv
+langdetect==1.0.9
+langchain_openai==0.3.34
+deepeval==3.6.6
+sendgrid==6.12.5

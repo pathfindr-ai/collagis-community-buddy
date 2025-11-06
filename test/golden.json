@@ -1,0 +1,8 @@
+[
+  {"text": "Hello, how are you?", "expected": "en"},
+  {"text": "नमस्ते, आप कैसे हैं?", "expected": "hi"},
+  {"text": "Xin chào bạn", "expected": "vi"},
+  {"text": "Selamat pagi", "expected": "id"},
+  {"text": "Bonjour, comment ça va?", "expected": "not found"}, 
+  {"text": "1234567890 !!!", "expected": "en"}
+]

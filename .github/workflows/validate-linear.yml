@@ -1,0 +1,266 @@
+name: Validate Linear PR
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize]
+
+concurrency:
+  group: validate-linear-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  validate-linear:
+    name: Ensure PR includes Linear key + link
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - name: Extract Linear issue key (from title/body)
+        id: extract
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}
+        run: |
+          set -euo pipefail
+
+          TITLE="${PR_TITLE:-}"
+          BODY="${PR_BODY:-}"
+
+          # Search space (title + body) - safely handle user input via printf
+          SEARCH_SPACE="$TITLE"$'\n'"$BODY"
+          UPPER_SEARCH="$(printf '%s' "$SEARCH_SPACE" | tr '[:lower:]' '[:upper:]')"
+
+          # Regex: 3-10 uppercase letters + hyphen + digits (narrow to reduce false positives)
+          KEY_REGEX='([A-Z]{3,10}-[0-9]+)'
+
+          ISSUE_KEY=""
+          if printf '%s' "$UPPER_SEARCH" | grep -Eo "$KEY_REGEX" | head -n1 >/dev/null; then
+            ISSUE_KEY="$(printf '%s' "$UPPER_SEARCH" | grep -Eo "$KEY_REGEX" | head -n1)"
+          fi
+
+          # ISSUE_KEY already uppercase from UPPER_SEARCH; no transformation needed
+
+          if [[ -z "$ISSUE_KEY" ]]; then
+            echo "::error::No Linear issue key found (expected pattern like ABC-123 in PR title or body)."
+            exit 1
+          fi
+
+          echo "issue_key=$ISSUE_KEY" >> "$GITHUB_OUTPUT"
+          echo "✅ Detected Linear issue key: $ISSUE_KEY"
+
+      - name: Verify Linear issue exists (GraphQL)
+        id: linear
+        if: steps.extract.outputs.issue_key != ''
+        env:
+          LINEAR_API_KEY: ${{ secrets.LINEAR_API_KEY }}
+          ISSUE_KEY: ${{ steps.extract.outputs.issue_key }}
+        run: |
+          set -euo pipefail
+
+          if [[ -z "${LINEAR_API_KEY:-}" ]]; then
+            echo "::error::Missing LINEAR_API_KEY secret"
+            exit 1
+          fi
+          echo "::add-mask::$LINEAR_API_KEY"
+
+          if ! command -v jq >/dev/null 2>&1; then
+            echo "::error::jq not available on runner."
+            exit 1
+          fi
+
+          # Query including URL so we can insert the exact canonical issue link (no workspace slug assumption)
+          SEARCH_QUERY='query SearchIssues($term: String!) { searchIssues(term: $term) { nodes { id identifier title url } } }'
+          PAYLOAD="$(jq -nc --arg q "$SEARCH_QUERY" --arg term "$ISSUE_KEY" '{query:$q, variables:{term:$term}}')"
+
+          RESPONSE="$(curl -sS --fail --show-error --max-time 30 --retry 2 --retry-delay 1 --retry-all-errors \
+            -H "Content-Type: application/json" \
+            -H "Authorization: $LINEAR_API_KEY" \
+            -d "$PAYLOAD" \
+            https://api.linear.app/graphql)"
+
+          if [[ -z "$RESPONSE" ]]; then
+            echo "::error::Empty response from Linear API."
+            exit 1
+          fi
+
+          if jq -e '.errors' >/dev/null 2>&1 <<<"$RESPONSE"; then
+            ERROR_MSG="$(jq -r '.errors[0].message // "Unknown GraphQL error"' <<<"$RESPONSE")"
+            echo "::error::GraphQL errors while searching for $ISSUE_KEY: $ERROR_MSG"
+            exit 1
+          fi
+
+          ISSUE_ID="$(jq -r --arg KEY "$ISSUE_KEY" '.data.searchIssues.nodes[]? | select(.identifier==$KEY) | .id' <<<"$RESPONSE" | head -n1)"
+          ISSUE_TITLE="$(jq -r --arg KEY "$ISSUE_KEY" '.data.searchIssues.nodes[]? | select(.identifier==$KEY) | .title' <<<"$RESPONSE" | head -n1)"
+          ISSUE_URL="$(jq -r --arg KEY "$ISSUE_KEY" '.data.searchIssues.nodes[]? | select(.identifier==$KEY) | .url' <<<"$RESPONSE" | head -n1)"
+
+          if [[ -z "$ISSUE_ID" || "$ISSUE_ID" == "null" ]]; then
+            echo "::error::No Linear issue found matching key $ISSUE_KEY via searchIssues"
+            exit 1
+          fi
+
+          if [[ -z "$ISSUE_TITLE" || "$ISSUE_TITLE" == "null" ]]; then
+            echo "::warning::Issue $ISSUE_KEY has no title (leaving only key in PR title)."
+            echo "issue_title=" >> "$GITHUB_OUTPUT"
+          else
+            ISSUE_TITLE_SINGLE="$(tr '\r\n\t' '   ' <<<"$ISSUE_TITLE" | sed -E 's/[[:space:]]+/ /g; s/^[[:space:]]+//; s/[[:space:]]+$//' | tr -d '\000-\031\177')"
+            echo "issue_title=$ISSUE_TITLE_SINGLE" >> "$GITHUB_OUTPUT"
+          fi
+
+          if [[ -n "$ISSUE_URL" && "$ISSUE_URL" != "null" ]]; then
+            echo "issue_url=$ISSUE_URL" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::No URL returned for issue $ISSUE_KEY"
+            echo "issue_url=" >> "$GITHUB_OUTPUT"
+          fi
+
+          echo "✅ Linear issue $ISSUE_KEY verified (ID: $ISSUE_ID)"
+
+      - name: Normalize PR title (prepend key if missing / mismatch)
+        id: normalize_title
+        uses: actions/github-script@v7
+        env:
+          ISSUE_KEY: ${{ steps.extract.outputs.issue_key }}
+          ISSUE_TITLE: ${{ steps.linear.outputs.issue_title }}
+          ORIGINAL_TITLE: ${{ github.event.pull_request.title }}
+        with:
+          script: |
+            const issueKey = process.env.ISSUE_KEY;
+            const issueTitle = process.env.ISSUE_TITLE || '';
+            const originalTitle = process.env.ORIGINAL_TITLE || '';
+            const prNumber = context.payload.pull_request.number;
+
+            const startsWithKey = new RegExp('^' + issueKey.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'i').test(originalTitle);
+
+            let desiredTitle;
+            if (issueTitle) {
+              desiredTitle = `${issueKey} ${issueTitle}`.trim();
+            } else if (startsWithKey) {
+              desiredTitle = originalTitle;
+            } else {
+              desiredTitle = `${issueKey} ${originalTitle}`.trim();
+            }
+
+            desiredTitle = desiredTitle.replace(
+              new RegExp(`^${issueKey.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')}(?:\\s+${issueKey.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')})*\\b`, 'i'),
+              issueKey
+            );
+
+            if (originalTitle !== desiredTitle) {
+              await github.rest.pulls.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+                title: desiredTitle,
+              });
+              core.notice(`PR title updated to: "${desiredTitle}"`);
+            } else {
+              core.info('PR title already conforms to required format.');
+            }
+
+      - name: Ensure key & canonical link in body (idempotent)
+        id: ensure_body_link
+        uses: actions/github-script@v7
+        env:
+          ISSUE_KEY: ${{ steps.extract.outputs.issue_key }}
+          ISSUE_URL: ${{ steps.linear.outputs.issue_url }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        with:
+          script: |
+            const issueKey = process.env.ISSUE_KEY;
+            const issueUrl = process.env.ISSUE_URL || '';
+            const prNumber = process.env.PR_NUMBER;
+            const { data: pr } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+            });
+
+            let body = pr.body || '';
+            const hasKey = new RegExp(`\\b${issueKey.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i').test(body);
+            const hasExactUrl = issueUrl ? body.includes(issueUrl) : false;
+
+            // Header block pattern (to avoid duplicating)
+            const headerPattern = /### 🔗 Linear Issue/i;
+
+            // Build link block if we have the issue URL
+            const linkBlock = issueUrl
+              ? `### 🔗 Linear Issue\n\n${issueUrl}`
+              : `### 🔗 Linear Issue\n\n(Unable to resolve issue URL for ${issueKey})`;
+
+            let updated = false;
+
+            // Simplified logic: determine needed additions
+            const needsKey = !hasKey;
+            const needsUrl = !!issueUrl && !hasExactUrl;
+            const hasHeader = headerPattern.test(body);
+            if (needsKey || needsUrl) {
+              if (hasHeader && needsUrl && !needsKey) {
+                // Only append the missing URL under existing header
+                body = `${body.trim()}\n\n${issueUrl}`;
+              } else {
+                // Add full normalized block (safe even if header existed but key missing)
+                body = body.trim().length ? `${body.trim()}\n\n${linkBlock}` : linkBlock;
+              }
+              updated = true;
+            }
+
+            if (updated) {
+              await github.rest.pulls.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                pull_number: prNumber,
+                body
+              });
+              core.notice('Added/updated Linear issue link block in PR body.');
+            } else {
+              core.info('PR body already contains issue key and canonical link.');
+            }
+
+      - name: Comment on PR when validation fails
+        if: failure()
+        uses: actions/github-script@v7
+        env:
+          ISSUE_KEY: ${{ steps.extract.outputs.issue_key }}
+          EXTRACT_OUTCOME: ${{ steps.extract.outcome }}
+        with:
+          script: |
+            const issueNumber = context.payload.pull_request.number;
+            const issueKey = process.env.ISSUE_KEY;
+            const extractOutcome = process.env.EXTRACT_OUTCOME;
+
+            const bodyLines = [];
+            bodyLines.push('### ❌ Linear Validation Failed');
+
+            if (extractOutcome !== 'success') {
+              bodyLines.push('- Missing or invalid Linear issue key (expected pattern like ABC-123).');
+            } else if (!issueKey) {
+              bodyLines.push('- Could not determine the Linear issue key after extraction.');
+            } else {
+              bodyLines.push(`- Issue key ${issueKey} could not be verified or another error occurred.`);
+            }
+
+            bodyLines.push('');
+            bodyLines.push('#### Required Fixes');
+            bodyLines.push('1. Ensure the PR title OR body includes the issue key (e.g. `ABC-123`).');
+            bodyLines.push('2. (Optional) Add a direct Linear issue URL for reviewer convenience.');
+            bodyLines.push('3. Save the PR (edit) or push a new commit to re-run validation.');
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber,
+              body: bodyLines.join('\n'),
+            });
+
+      - name: Summary
+        if: always()
+        env:
+          ISSUE_KEY: ${{ steps.extract.outputs.issue_key }}
+        run: |
+          if [[ "${{ job.status }}" == "success" ]]; then
+            echo "✅ Linear validation passed (key: ${ISSUE_KEY:-unknown})."
+          else
+            echo "❌ Linear validation failed."
+          fi
