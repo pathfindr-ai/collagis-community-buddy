@@ -22,22 +22,22 @@ load_dotenv()
 
 
 
-# def setup_webdriver():
-#     driver = webdriver.Chrome()
-#     return driver
-
 def setup_webdriver():
-    options = Options()
-    options.add_argument("--headless=new")  # headless mode
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome()
     return driver
 
+# def setup_webdriver():
+#     options = Options()
+#     options.add_argument("--headless=new")  # headless mode
+#     options.add_argument("--no-sandbox")
+#     options.add_argument("--disable-dev-shm-usage")
+#     options.add_argument("--disable-gpu")
+#     driver = webdriver.Chrome(options=options)
+#     return driver
+
 def fill_details(user_data, smoke_test, file_name, screenshots_dir="./assets/screenshots"):
-    driver = setup_webdriver()
-    # driver = webdriver.Chrome() # for testing purposes 
+    # driver = setup_webdriver()
+    driver = webdriver.Chrome() # for testing purposes 
     flow_name = "maintenance_request"
     screenshot_path=None
     driver.get("https://cbwebform.innovationlab360.com/")
@@ -311,12 +311,12 @@ def single_instance_lock():
 
 # ------------------ File Hashing ------------------
 def file_hash(file_path):
-    """Generate SHA256 hash of file contents"""
-    sha = hashlib.sha256()
-    with open(file_path, "rb") as f:
-        for chunk in iter(lambda: f.read(8192), b""):
-            sha.update(chunk)
-    return sha.hexdigest()
+    """
+    Generate a SHA256 hash based on the file name only (not contents).
+    """
+    # Use only the file name (not full path) for stable hashing
+    file_name = os.path.basename(file_path)
+    return hashlib.sha256(file_name.encode("utf-8")).hexdigest()
 
 # ------------------ File Processing ------------------
 def process_file(file_path, processed_dir, failed_dir, screenshots_dir):
